@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StitchCraftStudio | Embroidery Digitizing & Vector Art</title>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #FFD700;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        nav a {
+            color: #FFD700;
+            padding: 10px 15px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 215, 0, 0.2);
+            border-radius: 5px;
+        }
+        .services, .pricing {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .cta {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #FFD700;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            background-color: #e6b800;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <h1>Welcome to StitchCraftStudio</h1>
+        <p>Your destination for professional embroidery digitizing and vector art services.</p>
+        <div class="cta">
+            <button onclick="window.location.href='#contact'">Get Started</button>
+            <button onclick="window.location.href='#pricing'">View Pricing</button>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <h2>Our Services</h2>
+        <p>We offer high-quality embroidery digitizing and vector art services tailored to your needs.</p>
+    </div>
+    <div class="pricing" id="pricing">
+        <h2>Pricing Overview</h2>
+        <p>Check out our competitive pricing tailored to suit businesses of all sizes.</p>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to start your project? Reach out today!</p>
+    </div>
+</body>
+</html>
